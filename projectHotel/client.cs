@@ -9,7 +9,9 @@ namespace HotelProject
         public int ID { get; set; }
         public string Name { get; set; }
         public string Phone_Number { get; set; }
-        public int Room_ID { get; set; }
+       // public int Room_ID { get; set; }
 
+
+        public virtual IEnumerable<Booking> books { get; set; }
     }
 }

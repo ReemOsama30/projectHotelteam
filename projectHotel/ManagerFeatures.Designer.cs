@@ -42,6 +42,7 @@ namespace projectHotel
             this.button3.TabIndex = 5;
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -49,8 +50,9 @@ namespace projectHotel
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 76);
             this.button2.TabIndex = 4;
-            this.button2.Text = "Get Profit";
+            this.button2.Text = "RoomTypes Details";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -60,6 +62,7 @@ namespace projectHotel
             this.button1.TabIndex = 3;
             this.button1.Text = "About Rooms";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ManagerFeatures
             // 

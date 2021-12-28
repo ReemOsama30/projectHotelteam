@@ -1,4 +1,5 @@
-﻿using System;
+﻿using projectHotel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,6 +27,13 @@ namespace HotelProject
         {
             AboutRooms aboutRooms = new AboutRooms();
             aboutRooms.Show();
+            Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            GetProfit profit = new GetProfit();
+            profit.Show();
             Hide();
         }
     }

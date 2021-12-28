@@ -64,11 +64,65 @@ namespace HotelProject
                 Number_Of_Chairs = 25
 
             });
+            modelBuilder.Entity<Room>().HasData(new Room
+            {
+                ID = 101,
+                RoomTypeID = 1
+
+            }) ;
+            modelBuilder.Entity<Room>().HasData(new Room
+            {
+                ID = 102,
+                RoomTypeID = 2
+
+            });
+            modelBuilder.Entity<Room>().HasData(new Room
+            {     ID = 103,
+                RoomTypeID = 3
+
+            });
+            modelBuilder.Entity<Room>().HasData(new Room
+            {
+                ID = 201,
+                RoomTypeID = 1
+
+            });
+            modelBuilder.Entity<Room>().HasData(new Room
+            {
+                ID = 202,
+                RoomTypeID = 2
+
+            });
+            modelBuilder.Entity<Room>().HasData(new Room
+            {
+                ID =203 ,
+                RoomTypeID = 3
+
+            });
+            modelBuilder.Entity<Room>().HasData(new Room
+            {
+                ID = 303,
+                RoomTypeID = 3
+
+            });
+            modelBuilder.Entity<Room>().HasData(new Room
+            {
+                ID = 301,
+                RoomTypeID = 1
+
+            });
+            modelBuilder.Entity<Room>().HasData(new Room
+            {
+                ID = 302,
+                RoomTypeID = 2
+
+            });
 
         }
         public DbSet<Receptionist> receptionists { get; set; }
         public DbSet<Manager> managers { get; set; }
         public DbSet<client> clients { get; set; }
+        public DbSet<Booking> bookings { get; set; }
         public DbSet<Room> rooms { get; set; }
         public DbSet<RoomType> roomTypes { get; set; }
         public DbSet<Owner> owners{ get; set; }

@@ -10,11 +10,13 @@ namespace HotelProject
         {
             set; get;
         }
+  
         public int RoomTypeID
         {
             set; get;
         }
-
+        public bool isReserved { get; set; } = false;
         public virtual RoomType RoomType { get; set; }
+        public virtual IEnumerable<Booking> books { get; set; }
     }
 }

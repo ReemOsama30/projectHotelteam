@@ -61,12 +61,36 @@ namespace HotelProject
 
         private void ReceptionistSignUp_Load(object sender, EventArgs e)
         {
-
+            button3.Hide();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox2.PasswordChar == (char)0)
+            {
+                textBox2.PasswordChar = '*';
+            }
+            else
+            {
+                textBox2.PasswordChar = (char)0;
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if(textBox2.Text.Length>0)
+            {
+                button3.Show();
+            }
+            else
+            {
+                button3.Hide();
+            }
         }
     }
 }

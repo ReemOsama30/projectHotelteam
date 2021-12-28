@@ -38,7 +38,7 @@ namespace HotelProject
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(178, 156);
+            this.button1.Location = new System.Drawing.Point(112, 175);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(443, 41);
             this.button1.TabIndex = 0;
@@ -48,25 +48,27 @@ namespace HotelProject
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(178, 191);
+            this.button2.Location = new System.Drawing.Point(112, 222);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(443, 41);
             this.button2.TabIndex = 1;
             this.button2.Text = "Reserve Room";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(178, 226);
+            this.button3.Location = new System.Drawing.Point(112, 269);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(443, 41);
             this.button3.TabIndex = 2;
             this.button3.Text = "Check Out";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(178, 261);
+            this.button4.Location = new System.Drawing.Point(112, 316);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(443, 41);
             this.button4.TabIndex = 3;
@@ -78,7 +80,7 @@ namespace HotelProject
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(227, 50);
+            this.label1.Location = new System.Drawing.Point(149, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(374, 38);
             this.label1.TabIndex = 4;
@@ -88,7 +90,7 @@ namespace HotelProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(691, 470);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);

@@ -10,6 +10,7 @@ namespace HotelProject
         {
             set;get;
         }
+        
         public int client_ID
         {
             set;get;
@@ -18,17 +19,13 @@ namespace HotelProject
         {
             set; get;
         }
-        public int reciptionist_ID
+        public int Number_Of_Days 
         {
             set; get;
         }
-        public string Booking_Date
-        {
-            set; get;
-        }
-        public int Number_Of_Days
-        {
-            set; get;
-        }
+        public bool isFinish { get; set; } = false;
+        public virtual client clients { get; set; }
+        public virtual Room room { get; set; }
+        public double TotalPrice { get; set; }
     }
 }
